@@ -1,0 +1,50 @@
+{
+	"default_module": "powerline.segments.common",
+	"segment_data": {
+		"uptime": {
+			"before": "⇑  "
+		},
+		"external_ip": {
+			"before": "ⓦ  "
+		},
+		"date": {
+			"before": "⌚ "
+		}
+	},
+	"segments": {
+		"right": [
+            {
+                "function": "powerline.segments.common.env.virtualenv"
+            },
+            {
+                "function": "powerline.segments.common.sys.uptime"
+            },
+            {
+                "function": "powerline.segments.common.sys.system_load"
+            },
+			{
+                "function": "powerline.segments.common.net.external_ip",
+				"name": "external_ip",
+				"priority": 50,
+                "args": {
+                    "interface": "mlan0"
+                }
+			},
+			{
+                "function": "powerline.segments.common.time.date",
+				"name": "date",
+				"args": {
+					"format": "%H:%M %m-%d-%Y",
+					"istime": true
+				}
+			},
+			{
+                "function": "powerline.segments.common.net.hostname",
+				"name": "hostname",
+                "args": {
+                    "only_if_ssh": true
+                }
+			}
+		]
+	}
+}
