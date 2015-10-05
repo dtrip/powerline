@@ -21,7 +21,7 @@
 		},
 		"shell": {
 			"colorscheme": "dtrip",
-			"theme": "default",
+			"theme": "dtrip",
             "local_themes": {
                 "continuation": "continuation",
                 "select": "select"
