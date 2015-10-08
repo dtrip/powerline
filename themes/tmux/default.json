@@ -13,14 +13,9 @@
 	},
 	"segments": {
 		"right": [
-            {
-                "function": "powerline.segments.common.env.virtualenv"
-            },
+            
             {
                 "function": "powerline.segments.common.sys.uptime"
-            },
-            {
-                "function": "powerline.segments.common.sys.system_load"
             },
 			{
                 "function": "powerline.segments.common.net.external_ip",
@@ -38,11 +33,14 @@
 					"istime": true
 				}
 			},
+            {
+                "function": "powerline.segments.common.sys.system_load"
+            },
 			{
                 "function": "powerline.segments.common.net.hostname",
 				"name": "hostname",
                 "args": {
-                    "only_if_ssh": true
+                    "only_if_ssh": false
                 }
 			}
 		]
