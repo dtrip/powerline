@@ -9,7 +9,7 @@
 		"branch_clean": { "fg": "gray2", "bg": "black" },
 		"cwd": { "fg": "gray10", "bg": "gray2" },
 		"cwd:current_folder": { "fg": "gray10", "bg": "gray3", "attr": ["bold"] },
-		"cwd:divider": { "fg": "gray6", "bg": "gray2" },
+		"cwd:divider": { "fg": "lightyellow", "bg": "gray2" },
 		"hostname": { "fg": "gray10", "bg": "mediumpurple" },
 		"exit_fail": { "fg": "white", "bg": "red" },
 		"exit_success": { "fg": "white", "bg": "darkestgreen" },
