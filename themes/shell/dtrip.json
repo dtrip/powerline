@@ -9,6 +9,13 @@
 				"priority": 30
 			},
 			{
+                "function": "powerline.segments.common.net.hostname",
+				"name": "hostname",
+                "args": {
+                    "only_if_ssh": false
+                }
+			},
+			{
 				"function": "powerline.segments.common.env.virtualenv",
 				"priority": 50
 			},
